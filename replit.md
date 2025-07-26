@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a full-stack web application built with Express.js and React that provides a member authentication system with a protected member area. The application features a login system with session management and a dashboard interface for authenticated users.
+This is a full-stack web application built with Express.js and React that provides a member authentication system with a protected member area for the Japanese Method "Hara Hachi Bu" ebook. The application features a simple password-based login system (password: MJP-HHB1) with session management and a comprehensive dashboard interface where authenticated users can download 9 PDF modules including 5 chapters and 3 bonus materials about the Japanese eating philosophy.
 
 ## User Preferences
 
@@ -40,10 +40,20 @@ The application follows a modern full-stack architecture with clear separation b
 - **Schema**: Shared TypeScript schemas using Zod for validation
 
 ### Authentication & Authorization
-- **Login System**: Simple password verification against hardcoded password
+- **Login System**: Simple password verification against hardcoded password (MJP-HHB1)
 - **Session Management**: Server-side sessions with configurable expiration
 - **Protected Routes**: Client-side route protection with authentication checks
 - **Session Persistence**: HTTP-only cookies for session management
+
+### Content Management
+- **PDF Module System**: 9 downloadable PDF files organized as chapters and bonus content
+- **File Structure**: 
+  - Introduction: Complete method overview
+  - Chapter 1-5: Core content about conscious eating and Hara Hachi Bu
+  - Bonus 1: 7-day Japanese Detox Guide
+  - Bonus 2: 30 Traditional Okinawa Recipes
+  - Bonus 3: 5 Zen Meditations for Food Anxiety
+- **Download System**: Direct PDF downloads with descriptive filenames
 
 ## Data Flow
 
