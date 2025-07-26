@@ -1,0 +1,35 @@
+🚨 SOLUCIÓN INMEDIATA PARA EL ERROR 404
+
+PROBLEMA: Tu hosting no maneja correctamente las rutas de Single Page Application (SPA)
+
+SOLUCIÓN RÁPIDA:
+1. Usa el archivo index.html que acabo de crear (es independiente)
+2. Copia SOLO estos archivos a tu hosting:
+   - index.html (el nuevo archivo que creé)
+   - carpeta pdfs/ con todos los archivos PDF
+
+ESTRUCTURA FINAL EN TU HOSTING:
+tu-sitio.com/
+├── index.html
+└── pdfs/
+    ├── ebook-introducion_1753492157346.pdf
+    ├── Capitulo-1_1753492157346.pdf
+    ├── capitulo-2_1753492157346.pdf
+    ├── capitulo-3_1753492157345.pdf
+    ├── capitulo-4_1753492157345.pdf
+    ├── capitulo-5_1753492157345.pdf
+    ├── bono-1_1753492157344.pdf
+    ├── bono-2_1753492157344.pdf
+    └── bono-3_1753492157338.pdf
+
+CREDENCIALES:
+- Usuario: cualquier nombre
+- Contraseña: MJP-HHB1
+
+Esta versión NO requiere configuración especial del servidor.
+Funciona en cualquier hosting básico (incluso GitHub Pages).
+
+¿SIGUE SIN FUNCIONAR?
+- Verifica que los archivos PDF estén en la carpeta pdfs/
+- Asegúrate de que el index.html sea el que yo creé
+- Prueba accediendo directamente a: tu-sitio.com/index.html

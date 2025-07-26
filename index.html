@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Miembros - Método Japonés Hara Hachi Bu</title>
+    <meta name="description" content="Accede a tu área de miembros del Método Japonés Hara Hachi Bu. Descarga los 5 capítulos y 3 bonus exclusivos sobre alimentación consciente japonesa.">
+    <style>
+        body { 
+            font-family: system-ui, -apple-system, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background: linear-gradient(135deg, #dc2626, #fecaca);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 12px; 
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .logo { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            font-size: 2rem; 
+            color: #dc2626;
+            font-weight: bold;
+        }
+        .form-group { 
+            margin-bottom: 20px; 
+        }
+        label { 
+            display: block; 
+            margin-bottom: 8px; 
+            color: #374151;
+            font-weight: 500;
+        }
+        input { 
+            width: 100%; 
+            padding: 12px; 
+            border: 2px solid #e5e7eb; 
+            border-radius: 8px; 
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input:focus { 
+            outline: none; 
+            border-color: #dc2626; 
+        }
+        button { 
+            width: 100%; 
+            padding: 12px; 
+            background: #dc2626; 
+            color: white; 
+            border: none; 
+            border-radius: 8px; 
+            font-size: 16px; 
+            cursor: pointer;
+            font-weight: 600;
+        }
+        button:hover { 
+            background: #b91c1c; 
+        }
+        .error { 
+            color: #dc2626; 
+            margin-top: 10px; 
+            text-align: center;
+        }
+        .member-area { 
+            display: none; 
+        }
+        .pdf-list { 
+            list-style: none; 
+            padding: 0; 
+        }
+        .pdf-item { 
+            margin: 15px 0; 
+            padding: 15px; 
+            background: #f9fafb; 
+            border-radius: 8px; 
+            border-left: 4px solid #dc2626;
+        }
+        .pdf-title { 
+            font-weight: 600; 
+            color: #374151; 
+            margin-bottom: 5px;
+        }
+        .pdf-desc { 
+            color: #6b7280; 
+            font-size: 14px; 
+            margin-bottom: 10px;
+        }
+        .download-btn { 
+            background: #dc2626; 
+            color: white; 
+            padding: 8px 16px; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            display: inline-block;
+            font-size: 14px;
+        }
+        .download-btn:hover { 
+            background: #b91c1c; 
+        }
+        .logout-btn {
+            background: #6b7280;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            float: right;
+            font-size: 14px;
+        }
+        .logout-btn:hover {
+            background: #4b5563;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div id="login-form">
+            <div class="logo">🌸 Hara Hachi Bu</div>
+            <h2 style="text-align: center; color: #374151; margin-bottom: 30px;">Área de Miembros</h2>
+            
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" required>
+                </div>
+                
+                <button type="submit">Acceder</button>
+            </form>
+            
+            <div id="error-message" class="error"></div>
+        </div>
+
+        <!-- Member Area -->
+        <div id="member-area" class="member-area">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <h2 style="color: #374151; margin: 0;">¡Bienvenido!</h2>
+                <button class="logout-btn" onclick="logout()">Salir</button>
+            </div>
+            
+            <p style="color: #6b7280; margin-bottom: 30px;">Descarga todos los módulos del Método Japonés Hara Hachi Bu:</p>
+            
+            <ul class="pdf-list">
+                <li class="pdf-item">
+                    <div class="pdf-title">📖 Introducción Completa</div>
+                    <div class="pdf-desc">Guía completa del método japonés para alimentación consciente</div>
+                    <a href="pdfs/ebook-introducion_1753492157346.pdf" class="download-btn" download>Descargar</a>
+                </li>
+                
+                <li class="pdf-item">
+                    <div class="pdf-title">📚 Capítulo 1: Alimentación Consciente</div>
+                    <div class="pdf-desc">Fundamentos de la alimentación consciente japonesa</div>
+                    <a href="pdfs/Capitulo-1_1753492157346.pdf" class="download-btn" download>Descargar</a>
+                </li>
+                
+                <li class="pdf-item">
+                    <div class="pdf-title">📚 Capítulo 2: Domina la Saciedad</div>
+                    <div class="pdf-desc">Técnicas para reconocer señales de saciedad</div>
+                    <a href="pdfs/capitulo-2_1753492157346.pdf" class="download-btn" download>Descargar</a>
+                </li>
+                
+                <li class="pdf-item">
+                    <div class="pdf-title">📚 Capítulo 3: Arte de la Alimentación</div>
+                    <div class="pdf-desc">Técnicas visuales y mindfulness alimentario</div>
+                    <a href="pdfs/capitulo-3_1753492157345.pdf" class="download-btn" download>Descargar</a>
+                </li>
+                
+                <li class="pdf-item">
+                    <div class="pdf-title">📚 Capítulo 4: Alimentación Natural</div>
+                    <div class="pdf-desc">Guía nutricional basada en principios japoneses</div>
+                    <a href="pdfs/capitulo-4_1753492157345.pdf" class="download-btn" download>Descargar</a>
+                </li>
+                
+                <li class="pdf-item">
+                    <div class="pdf-title">📚 Capítulo 5: Método Completo</div>
+                    <div class="pdf-desc">Implementación completa del sistema Hara Hachi Bu</div>
+                    <a href="pdfs/capitulo-5_1753492157345.pdf" class="download-btn" download>Descargar</a>
+                </li>
+                
+                <li class="pdf-item">
+                    <div class="pdf-title">🎁 Bonus 1: Guía Detox Japonesa</div>
+                    <div class="pdf-desc">Programa de 7 días de desintoxicación japonesa</div>
+                    <a href="pdfs/bono-1_1753492157344.pdf" class="download-btn" download>Descargar</a>
+                </li>
+                
+                <li class="pdf-item">
+                    <div class="pdf-title">🎁 Bonus 2: Recetario de Okinawa</div>
+                    <div class="pdf-desc">30 recetas tradicionales de la zona azul más longeva</div>
+                    <a href="pdfs/bono-2_1753492157344.pdf" class="download-btn" download>Descargar</a>
+                </li>
+                
+                <li class="pdf-item">
+                    <div class="pdf-title">🎁 Bonus 3: Zen y Plenitud</div>
+                    <div class="pdf-desc">5 meditaciones zen para ansiedad alimentaria</div>
+                    <a href="pdfs/bono-3_1753492157338.pdf" class="download-btn" download>Descargar</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const correctPassword = 'MJP-HHB1';
+        
+        // Check if user is already logged in
+        if (localStorage.getItem('isLoggedIn') === 'true') {
+            showMemberArea();
+        }
+        
+        function handleLogin(event) {
+            event.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorDiv = document.getElementById('error-message');
+            
+            if (password === correctPassword) {
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('username', username);
+                showMemberArea();
+                errorDiv.textContent = '';
+            } else {
+                errorDiv.textContent = 'Contraseña incorrecta. Use: MJP-HHB1';
+            }
+        }
+        
+        function showMemberArea() {
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('member-area').style.display = 'block';
+        }
+        
+        function logout() {
+            localStorage.removeItem('isLoggedIn');
+            localStorage.removeItem('username');
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('member-area').style.display = 'none';
+            document.getElementById('username').value = '';
+            document.getElementById('password').value = '';
+        }
+    </script>
+</body>
+</html>
