@@ -1,0 +1,30 @@
+[build]
+  publish = "dist/public"
+  command = "npm run build && ./copy-assets.sh"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/pdfs/*"
+  to = "/pdfs/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[ headers ]]
+  for = "/*.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
+    Cache-Control = "public, max-age=2592000"
+
+[[ headers ]]
+  for = "/pdfs/*"
+  [headers.values]
+    Content-Type = "application/pdf"
+    Cache-Control = "public, max-age=2592000"

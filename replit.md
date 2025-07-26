@@ -111,4 +111,25 @@ The application is configured for deployment with:
 - `npm run start`: Start production server
 - `npm run db:push`: Push database schema changes
 
-The application is designed to be easily deployable to platforms like Replit, with proper environment variable configuration for database connections and session secrets.
+### Deployment Issues & Solutions
+
+**Common 404 Error Fix:**
+When deploying to external hosting, the application may show 404 errors or raw HTML content. This happens because the hosting platform doesn't properly handle Single Page Application (SPA) routing.
+
+**Solutions by Platform:**
+1. **Apache Hosting**: Use the included `.htaccess` file for proper URL rewriting
+2. **Nginx**: Configure try_files directive to fallback to index.html
+3. **Netlify**: Use the included `netlify.toml` configuration
+4. **Vercel**: Use the included `vercel.json` configuration
+5. **Node.js Express**: Use `NODE_ENV=production npm start`
+
+**Required Files for Production:**
+- All PDF files must be copied to `dist/public/pdfs/` after build
+- Use `./copy-assets.sh` script to copy PDFs correctly
+- Ensure `index.html` serves as fallback for all non-API routes
+
+**Authentication:**
+- Username: Any value accepted
+- Password: `MJP-HHB1` (case-sensitive)
+
+The application includes comprehensive deployment configuration files and scripts to handle various hosting scenarios.
