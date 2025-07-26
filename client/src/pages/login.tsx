@@ -29,6 +29,7 @@ export default function Login() {
   const loginMutation = useMutation({
     mutationFn: login,
     onSuccess: (data) => {
+      console.log("Login response:", data);
       if (data.success) {
         toast({
           title: "¡Bienvenido!",
@@ -38,15 +39,16 @@ export default function Login() {
       } else {
         toast({
           title: "Error de acceso",
-          description: data.message,
+          description: data.message || "Contraseña incorrecta",
           variant: "destructive",
         });
       }
     },
-    onError: () => {
+    onError: (error) => {
+      console.error("Login error:", error);
       toast({
         title: "Error de conexión",
-        description: "No se pudo conectar con el servidor. Intenta nuevamente.",
+        description: `Error: ${error.message || "No se pudo conectar con el servidor"}`,
         variant: "destructive",
       });
     },
