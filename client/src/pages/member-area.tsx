@@ -259,22 +259,7 @@ export default function MemberArea() {
               </CardContent>
             </Card>
 
-            {/* Community Card */}
-            <Card className="animate-slide-up">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
-                  <Users className="w-5 h-5 mr-2 text-[var(--primary-red)]" />
-                  Comunidad
-                </h3>
-                <p className="text-sm text-gray-600 mb-4">
-                  Únete a otros miembros en su viaje hacia una alimentación consciente.
-                </p>
-                <Button className="w-full bg-[var(--primary-red)] hover:bg-[var(--secondary-red)]">
-                  <MessageCircle className="w-4 h-4 mr-1" />
-                  Acceder al Foro
-                </Button>
-              </CardContent>
-            </Card>
+            
           </div>
         </div>
       </main>
