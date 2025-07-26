@@ -138,7 +138,7 @@ export default function MemberArea() {
                         PDF completo
                       </span>
                     </div>
-                    <a href="/attached_assets/ebook-introducion_1753492157346.pdf" download="Introduccion-Hara-Hachi-Bu.pdf">
+                    <a href="/pdfs/ebook-introducion_1753492157346.pdf" download="Introduccion-Hara-Hachi-Bu.pdf">
                       <Button className="bg-[var(--primary-red)] hover:bg-[var(--secondary-red)]">
                         <Download className="w-4 h-4 mr-1" />
                         Descargar Introducción
@@ -171,7 +171,7 @@ export default function MemberArea() {
                         Guía completa
                       </span>
                     </div>
-                    <a href="/attached_assets/Capitulo-1_1753492157346.pdf" download="Capitulo-1-Alimentacion-Consciente.pdf">
+                    <a href="/pdfs/Capitulo-1_1753492157346.pdf" download="Capitulo-1-Alimentacion-Consciente.pdf">
                       <Button className="bg-[var(--primary-red)] hover:bg-[var(--secondary-red)]">
                         <Download className="w-4 h-4 mr-1" />
                         Descargar Capítulo 1
@@ -204,7 +204,7 @@ export default function MemberArea() {
                         Técnicas prácticas
                       </span>
                     </div>
-                    <a href="/attached_assets/capitulo-2_1753492157346.pdf" download="Capitulo-2-Domina-la-Saciedad.pdf">
+                    <a href="/pdfs/capitulo-2_1753492157346.pdf" download="Capitulo-2-Domina-la-Saciedad.pdf">
                       <Button className="bg-[var(--primary-red)] hover:bg-[var(--secondary-red)]">
                         <Download className="w-4 h-4 mr-1" />
                         Descargar Capítulo 2
@@ -237,7 +237,7 @@ export default function MemberArea() {
                         Técnicas visuales
                       </span>
                     </div>
-                    <a href="/attached_assets/capitulo-3_1753492157345.pdf" download="Capitulo-3-Arte-Alimentacion.pdf">
+                    <a href="/pdfs/capitulo-3_1753492157345.pdf" download="Capitulo-3-Arte-Alimentacion.pdf">
                       <Button className="bg-[var(--primary-red)] hover:bg-[var(--secondary-red)]">
                         <Download className="w-4 h-4 mr-1" />
                         Descargar Capítulo 3
@@ -270,7 +270,7 @@ export default function MemberArea() {
                         Guía nutricional
                       </span>
                     </div>
-                    <a href="/attached_assets/capitulo-4_1753492157345.pdf" download="Capitulo-4-Alimentacion-Natural.pdf">
+                    <a href="/pdfs/capitulo-4_1753492157345.pdf" download="Capitulo-4-Alimentacion-Natural.pdf">
                       <Button className="bg-[var(--primary-red)] hover:bg-[var(--secondary-red)]">
                         <Download className="w-4 h-4 mr-1" />
                         Descargar Capítulo 4
@@ -303,7 +303,7 @@ export default function MemberArea() {
                         Método completo
                       </span>
                     </div>
-                    <a href="/attached_assets/capitulo-5_1753492157345.pdf" download="Capitulo-5-Metodo-Completo.pdf">
+                    <a href="/pdfs/capitulo-5_1753492157345.pdf" download="Capitulo-5-Metodo-Completo.pdf">
                       <Button className="bg-[var(--primary-red)] hover:bg-[var(--secondary-red)]">
                         <Download className="w-4 h-4 mr-1" />
                         Descargar Capítulo 5
@@ -336,7 +336,7 @@ export default function MemberArea() {
                         Guía paso a paso
                       </span>
                     </div>
-                    <a href="/attached_assets/bono-1_1753492157344.pdf" download="Bonus-1-Guia-Detox-Japonesa.pdf">
+                    <a href="/pdfs/bono-1_1753492157344.pdf" download="Bonus-1-Guia-Detox-Japonesa.pdf">
                       <Button className="bg-yellow-500 hover:bg-yellow-600 text-white">
                         <Download className="w-4 h-4 mr-1" />
                         Descargar Bonus 1
@@ -369,7 +369,7 @@ export default function MemberArea() {
                         Recetario completo
                       </span>
                     </div>
-                    <a href="/attached_assets/bono-2_1753492157344.pdf" download="Bonus-2-Recetario-Okinawa.pdf">
+                    <a href="/pdfs/bono-2_1753492157344.pdf" download="Bonus-2-Recetario-Okinawa.pdf">
                       <Button className="bg-yellow-500 hover:bg-yellow-600 text-white">
                         <Download className="w-4 h-4 mr-1" />
                         Descargar Bonus 2
@@ -402,7 +402,7 @@ export default function MemberArea() {
                         Guía zen
                       </span>
                     </div>
-                    <a href="/attached_assets/bono-3_1753492157338.pdf" download="Bonus-3-Zen-y-Plenitud.pdf">
+                    <a href="/pdfs/bono-3_1753492157338.pdf" download="Bonus-3-Zen-y-Plenitud.pdf">
                       <Button className="bg-yellow-500 hover:bg-yellow-600 text-white">
                         <Download className="w-4 h-4 mr-1" />
                         Descargar Bonus 3
